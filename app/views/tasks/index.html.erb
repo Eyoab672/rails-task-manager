@@ -1,0 +1,10 @@
+<h2>Here are all the tasks</h2>
+<ul>
+  <% @tasks.each do |task| %>
+  <li>
+    <%= task.title%> / - <%= task.completed ? "Completed" : "Not Completed" %>
+  </li>
+  <% end %>
+</ul>
+
+<% link_to "Add an new task", "tasks/new" %>
